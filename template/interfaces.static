@@ -1,0 +1,15 @@
+
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+	address 10.27.22.8/24
+	gateway 10.27.22.5
+
+iface eth0 inet6 static
+	address 2a07:7e81:3f1c::8/64
+	gateway fe80::62be:b4ff:fe08:d3eb
+
+source /etc/network/interfaces.d/*
