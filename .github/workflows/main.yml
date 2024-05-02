@@ -25,7 +25,7 @@ jobs:
       - name: Git Clone Reposytory
         run: |
            git clone https://github.com/mikysal78/proxmox-ct-template-devuan-5.0.1.git
-           cd proxmox-ct-template-devuan-5.0.1
+           mv proxmox-ct-template-devuan-5.0.1* .
       - name: Show info repo
         run: |
            echo "sono nella directory"
