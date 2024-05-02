@@ -24,8 +24,8 @@ jobs:
            sudo dpkg -i dab*
       - name: Git Clone Reposytory
         run: |
-           git clone https://github.com/mikysal78/proxmox-ct-template-devuan-5.0.1.git
-           mv proxmox-ct-template-devuan-5.0.1* .
+           git clone https://github.com/mikysal78/proxmox-ct-template-devuan-5.0.1.git devuan
+           mv devuan/* .
       - name: Show info repo
         run: |
            echo "sono nella directory"
