@@ -25,9 +25,14 @@ jobs:
       - name: Git Clone Reposytory
         run: |
            git clone https://github.com/mikysal78/proxmox-ct-template-devuan-5.0.1.git
-      - name: Move on Reposytory
-        run: |
            cd proxmox-ct-template-devuan-5.0.1
+      - name: Show info repo
+        run: |
+           echo "sono nella directory"
+           pwd
+           echo "Questi sono i files"
+           ls -la
+           
       - name: Compile
         run: |
           make
