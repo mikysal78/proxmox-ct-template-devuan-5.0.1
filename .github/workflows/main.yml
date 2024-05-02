@@ -13,6 +13,7 @@ jobs:
       # ...
       - name: "Build & test"
         run: |
+          sudo mount -n -t tmpfs -o uid=0,gid=0,mode=0755 cgroup /sys/fs/cgroup
           sudo apt update
           sudo apt -y install build-essential clang flex bison g++ gawk \
           gcc-multilib g++-multilib gettext git libncurses-dev libssl-dev \
