@@ -22,7 +22,9 @@ jobs:
         run: |
            wget http://download.proxmox.com/debian/dists/bookworm/pve-no-subscription/binary-amd64/dab_3.5.0_all.deb
            sudo dpkg -i dab*
-
+      - name: Git Clone Reposytory
+        run: |
+           git clone https://github.com/mikysal78/proxmox-ct-template-devuan-5.0.1.git
       - name: Compile
         run: |
           make
