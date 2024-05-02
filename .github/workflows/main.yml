@@ -21,7 +21,7 @@ jobs:
       - name: "Download and install DAB"
         run: |
            wget http://download.proxmox.com/debian/dists/bookworm/pve-no-subscription/binary-amd64/dab_3.5.0_all.deb
-           dpkg -i dab*
+           sudo dpkg -i dab*
 
       - name: Compile
         run: |
