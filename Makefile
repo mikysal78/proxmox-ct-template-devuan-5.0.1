@@ -9,7 +9,7 @@ end:
         # ========================
         # Create OpenVZ Appliance
         # ========================
-	dab finalize
+	dab finalize --compressor zstd-max
 
 info/init_ok: dab.conf
 	dab init
